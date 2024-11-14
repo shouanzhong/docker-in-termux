@@ -64,6 +64,11 @@ wget https://raw.githubusercontent.com/cyberkernelofficial/docker-in-termux/main
 > ```bash
 > echo -e "nameserver 192.168.1.1\nnameserver 1.1.1.1" > /etc/resolv.conf
 > ```
+or
+> ```bash
+> echo "nameserver 8.8.8.8" > /etc/resolv.conf
+> echo "nameserver 8.8.4.4" >> /etc/resolv.conf
+> ```
 
 11. Patch ``setup-disk`` to enable serial console output on boot:
 ```bash
